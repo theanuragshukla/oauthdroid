@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">oauth</string>
+    <string name="signup"><u><b>Signup</b></u></string>
+    <string name="login"><u><b>Login</b></u></string>
+</resources>
