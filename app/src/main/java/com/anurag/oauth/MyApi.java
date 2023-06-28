@@ -19,4 +19,8 @@ public interface MyApi {
     Call<TokenResponse> getToken(@Query("userId") String userId, @Header("x-refresh-token") String refreshToken);
     @GET("/logout")
     Call<String> logout(@Header("x-access-token")String accessToken);
+    @POST("/upload-image")
+    Call<UploadResponse> upload(@Body UploadRequest req, @Header("x-access-token") String access);
+    @GET("/fetchImage")
+    Call<FetchImageResponse> fetchImage(@Header("x-access-token") String accessToken, @Query("uid") String uid);
 }

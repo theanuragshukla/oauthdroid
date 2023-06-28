@@ -2,6 +2,9 @@ package com.anurag.oauth;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProfileResponse {
     @SerializedName("status")
     private boolean status;
@@ -11,6 +14,28 @@ public class ProfileResponse {
 
     @SerializedName("msg")
     private String message;
+
+    @SerializedName("ttlImgs")
+    private  int ttl;
+
+    public int getTtl() {
+        return ttl;
+    }
+
+    public void setTtl(int ttl) {
+        this.ttl = ttl;
+    }
+
+    public ArrayList<String> getImgs() {
+        return imgs;
+    }
+
+    public void setImgs(ArrayList<String> imgs) {
+        this.imgs = imgs;
+    }
+
+    @SerializedName("imgs")
+    private ArrayList<String> imgs;
 
     public boolean isStatus() {
         return status;

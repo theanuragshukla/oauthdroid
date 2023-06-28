@@ -21,79 +21,22 @@
         android:layout_marginBottom="24dp"
         />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/username_layout"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:boxStrokeColor="#8FBCBB"
-        app:startIconDrawable="@drawable/person"
-        app:startIconTint="#D8DEE9"
-        app:boxBackgroundColor="#4C566A"
-        app:boxCornerRadiusBottomEnd="16dp"
-        app:boxCornerRadiusBottomStart="16dp"
-        app:boxCornerRadiusTopEnd="16dp"
-        app:boxCornerRadiusTopStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:focusableInTouchMode="true"
-        app:hintEnabled="false"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:textSize="18sp"
-            android:singleLine="true"
-            android:hint="Username"
-            android:textColorHint="#81A1C1"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_layout"
-        android:layout_width="match_parent"
+        android:text="Capture"
+        android:backgroundTint="@color/nord7"
+        android:id="@+id/captureBtn"
+        android:tag="capture"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:boxStrokeColor="#8FBCBB"
-        app:startIconDrawable="@drawable/email"
-        app:startIconTint="#D8DEE9"
-        app:boxBackgroundColor="#4C566A"
-        app:boxCornerRadiusBottomEnd="16dp"
-        app:boxCornerRadiusBottomStart="16dp"
-        app:boxCornerRadiusTopEnd="16dp"
-        app:boxCornerRadiusTopStart="16dp"
-        android:layout_marginBottom="16dp"
-        app:hintEnabled="false"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        >
+        android:text="Gallery"
+        android:backgroundTint="@color/nord7"
+        android:id="@+id/exploreBtn"
+        android:tag="explore"
+        />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:textSize="18sp"
-            android:singleLine="true"
-            android:hint="Email"
-            android:textColorHint="#81A1C1"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/logoutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#2E3440"
-            android:backgroundTint="#D8DEE9"
-            app:cornerRadius="16dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:paddingHorizontal="24dp"
-            android:text="Log Out" />
-
-
-    </LinearLayout>
 </LinearLayout>
+
